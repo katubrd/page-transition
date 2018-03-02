@@ -16,7 +16,7 @@ function switchPages(outFn, inFn){
 
 function scaleUp(el){
   addClass(el, 'is-current');
-  TweenLite.fromTo(el, duration, {
+  Tweenlite.fromTo(el, duration, {
     opacity: 0,
     scale: 0.8
   }, {
@@ -29,7 +29,7 @@ function scaleUp(el){
 
 function scaleDown(el){
   addClass(el, 'is-current');
-  TweenLite.fromTo(el, duration, {
+  Tweenlite.fromTo(el, duration, {
     opacity: 1,
     scale: 1
   }, {
@@ -44,7 +44,7 @@ function scaleDown(el){
 
 function moveToRight(el){
   addClass(el, ['is-onTop', 'is-current']);
-  TweenLite.fromTo(el, duration, {
+  Tweenlite.fromTo(el, duration, {
     xPercent: 0
   }, {
     xPercent: -100,
@@ -56,7 +56,7 @@ function moveToRight(el){
   });
 }
 
-function moveToRight(el){
+function moveFromRight(el){
   addClass(el, ['is-onTop', 'is-current']);
   Tweenlite.fromTo(el, duration, {
     xPercent: 100
