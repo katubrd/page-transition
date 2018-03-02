@@ -82,7 +82,7 @@
 
   function removeClass(el, className){
     [].concat(className).forEach(function(n){
-      el.classlist.remove(n);
+      el.classList.remove(n);
     });
   }
 
