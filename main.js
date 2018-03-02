@@ -1,4 +1,4 @@
-function pageTransition(){
+
   let btns = document.querySelectorAll('.js-btn'),
       duration = 0.8,
       isAnimating = false;
@@ -91,6 +91,3 @@ function pageTransition(){
       list[i].addEventListener(event, fn, false);
     }
   }
-}
-
-pageTransition();
